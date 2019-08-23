@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    height: 100vh;
+    background: linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+header {
+    display: flex;
+    margin: 0px;
+    padding: 15px;
+    background-color: steelblue;
+}
+
+input {
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    font-size: 25px;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+}
+
+input:focus {
+    border: 2px #2BC0E4 solid;
+    color: grey;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    height: 100%;
+}
+
+li {
+    display: flex;
+}
+
+#title, #add {
+    margin: 0px;
+    padding: 0px;
+}
+
+#title {
+    color: white;
+    font: sans-serif;
+}
+
+#content {
+    background-color: white;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.item{
+    padding: 20px;
+    width : 100%;
+}
+
+header > p {
+    flex-grow: 1;
+}
+
+.fa-trash {
+    width: 0px;
+    background-color: red;
+    padding: 20px 0px 20px 0px;
+}
+
+li:hover > .fa-trash {
+    width: 20px;
+    padding: 20px 20px 20px 20px;
+    transition: 0.4s linear;
+}
+
+li:nth-child(2n+1) {
+    background-color: #f7f7f7;
+}
+
+/* icons */
+.fa-plus, .fa-trash{
+    color: white;
+}
