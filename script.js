@@ -23,7 +23,7 @@ function add(){
     let text = $(".add-text").val().toUpperCase();
     if (text != '') {
         const struct = '<li><i class="fas fa-trash"></i><span class="item">' + text + '</span></li>';
-        $("#content").append(struct);
+        $.find("#content").append(struct);
         $(".add-text").val('');
     }
 }
